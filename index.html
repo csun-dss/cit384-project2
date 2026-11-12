@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Take care of Pixel, a cheerful Giga Pet.">
+    <title>Pixel The Giga Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="game-card">
+      <header>
+        <p class="eyebrow">YOUR POCKET COMPANION</p>
+        <h1>Pixel The Giga Pet</h1>
+        <p class="intro">Keep Pixel happy, healthy, and fresh for more tail wags.</p>
+      </header>
+      <section class="pet-area" aria-label="Pixel the dog">
+        <div class="image-frame"><img class="pet-image" src="images/pixel-dog.png" alt="Pixel, a happy black-and-tan dog"></div>
+        <p class="pet-message" aria-live="polite">Pixel is ready for an adventure!</p>
+      </section>
+      <section class="dashboard" aria-label="Pixel's status and care actions">
+        <h2>Pixel's status</h2>
+        <dl class="stats">
+          <div><dt>Name</dt><dd class="name"></dd></div>
+          <div><dt>Weight</dt><dd><span class="weight"></span> <small>lb</small></dd></div>
+          <div><dt>Happiness</dt><dd><span class="happiness"></span> <small>tail wags</small></dd></div>
+          <div><dt>Cleanliness</dt><dd><span class="cleanliness"></span> <small>%</small></dd></div>
+        </dl>
+        <div class="button-container" aria-label="Care for Pixel">
+          <button class="treat-button" type="button">🍪 Treat</button>
+          <button class="play-button" type="button">🎾 Play</button>
+          <button class="exercise-button" type="button">🏃 Exercise</button>
+          <button class="groom-button" type="button">🛁 Groom</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
